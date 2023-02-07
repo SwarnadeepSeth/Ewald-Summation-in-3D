@@ -1,0 +1,153 @@
+int ParticleN=2;
+int nverlet=2;
+int ParticleN_Chain=2;
+int TagL = 0;
+int TagN = 0;
+int anchor[2] = {14,20};
+int nevry=1; // Data averaging, movie making(x100) //
+int nwrite=1; // Terminal printing //
+long nwarm=0;
+long ntime=0;
+
+// Switches //
+int noise=0;
+int dimen=3;
+int LatticeFile_Switch=1;
+int RandomLattice_Switch=0;
+int LatticeEquilibriated_Switch=1;
+int InitVel_Switch=0;
+int Forced_PBC=0;  // Disabled inside code, check before use //
+int Ext_Forced_PBC=1; // TURN ON SOME COMMENTED LINES BEFORE USING EXT PARTICLES //
+int LJ_Switch=0;
+int Verlet_Switch=0;
+int Cell_Switch=0;
+int FENE_Switch=0;
+int BEND_Switch=0;
+int Wall_Switch=0;
+int Nanopore_Clamp=0;
+int Flossing_Switch=0;
+int Gauss_BMT=0; // Disabled inside code, check before use //
+int Gauss_CDF=0; // Disabled inside code, check before use //
+int Gauss_NORM=0; // Disabled inside code, check before use //
+int Gauss_BMT_Polar=2;  // 1 for Normal & 2 for Both //
+
+double tref=1.0;
+double rcut=1.122462;
+//double rcut=2.5;
+double rcutsq=1.259921;  // Check if special cutoff is enable //
+double rskin=0.30;
+double dt=0.01;
+double default_mass=1.0;
+double default_gama=0.7;
+double alt_mass=1.0; // Altered Value of Mass //
+double alt_gama=0.7; // Altered Value of Gamma //
+double ctol=0.05;
+double R_fene=1.5;
+double K_fene=30.0;
+//double R_fene=4.5;
+//double K_fene=10.0;
+double R_fene_Tag=1.5;
+double K_fene_Tag=30.0;
+double R_fene_Anchor=3.0;
+double K_fene_Anchor=25.0;
+double Rkb_bend=0.0;
+
+// Box boundaries (symmetric)//
+double Lx=32.0;
+double Ly=32.0;
+double Lz=32.0;
+double Lz4=50.0;
+
+// External Particles' boundaries [-L,L] //
+double Ext_Lx=45.0;
+double Ext_Ly=45.0;
+double Ext_Lz=45.0;
+double Ext_Lz4=50.0;
+
+// Data Switches //
+int Movie_Switch=1;
+int cm_DATA=1;
+
+// Wall parameters //
+double pore_sep=32.0;
+double wall_atom_spacing=1.0; // dont't change the spacing (other spacings doesn't work) //
+double l_pore_radius=2.0;
+double r_pore_radius=2.0;
+double pore_thickness=4.0;
+double l_pore_force=-0.0;
+double r_pore_force=-0.0;
+double pore_force_effect_radius=4.0;
+
+// Flossing parameters //
+int floss_start=10;
+int floss_end=10;
+int floss_max=2;
+double floss_force=-1.25; // Make sure the chain is in TOW //
+
+// Electric Field parameter //
+int Ext_Efield=0;
+int GridN=262144;
+double inv_ms=1.0; // Inverse of the Mesh Space: 1.0/mesh_space //
+double l_pore_gridx_min=-32.0;
+double l_pore_gridx_max=31.0;
+double r_pore_gridx_min=0.0;
+double r_pore_gridx_max=0.0;
+double gridy_min=-32.0;
+double gridy_max=31.0;
+double gridz_min=-32.0;
+double gridz_max=31.0;
+double box_width=64.0;
+double box_height=64.0;
+double Volt1 = 20.0;
+double Volt2 = 20.0;
+double Volt3 = 20.0;
+
+// Ions parameters //
+int positive_ions=1;
+int negative_ions=1;
+
+// Yukawa potential paramentrs//
+int Yukawa_Switch=0;
+double Yukawa_rcutsq=25;
+double dielectric_const=1.7;
+double kappa=1.0;
+
+// Ewald parameters //
+int Ewald_Switch=0;
+//double alpha=4.0;
+double bejrrum=1.0;
+int kmax=1;
+int ksqmax=27;
+int maxk=1000;
+
+// PME parameters //
+int PME_Switch=1;
+double ONE_PI_EPS0=1.0;
+double alpha=0.45;
+int PME_nmax=10; // Real space cells
+int PME_kmax=20; // K space max vectors
+double accuracy=0.0001;
+
+// Linked-Cell-List parameters //
+int ncell = 8; // Number of cells in one direction //
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
