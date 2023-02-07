@@ -1,0 +1,44 @@
+// Number of Particles in the System //
+int ParticleN=8;
+int dimen=3; // dimensionality of the system
+
+double default_mass=1.0;
+double default_gama=0.7;
+
+// Box boundaries [0,L]//
+double Lx=32.0;
+double Ly=32.0;
+double Lz=32.0;
+
+// Box boundaries [-L,L] //
+double Ext_Lx=1.0;
+double Ext_Ly=1.0;
+double Ext_Lz=1.0;
+
+// Ewald parameters //
+double ONE_PI_EPS0=1.0;
+double alpha=4.0;
+int PME_nmax=5; // Real space cells
+int PME_kmax=13; // K space max vectors
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
